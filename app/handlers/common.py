@@ -6,7 +6,10 @@ router = Router()
 
 @router.message(CommandStart())
 async def start_handler(message: Message):
-    await message.answer("Добро пожаловать в JobKyrgyz Bot! Выберите, кто вы:
+    await message.answer(
+    "Добро пожаловать в JobKyrgyz Bot! "
+    "Выберите, кто вы:\n\n"
+    "👤 Соискатель\n"
+    "🏢 Работодатель"
+)
 
-👤 Соискатель
-🏢 Работодатель")
