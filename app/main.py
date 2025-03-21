@@ -1,8 +1,8 @@
 import asyncio
 from aiogram import Bot, Dispatcher
-from app.config import BOT_TOKEN
-from app.handlers import common, seeker, employer, edit
-from app.services.db import init_db
+from config import BOT_TOKEN
+from handlers import common, seeker, employer, edit
+from services.db import init_db
 import logging
 
 async def main():
